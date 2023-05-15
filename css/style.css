@@ -1,0 +1,380 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* basic */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    height: 1000vh;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+
+/* style */
+
+.header {
+    background-image: url(../images/bg-home/h1-image-01.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.head-info {
+    background-color: rgba(255, 255, 255, 0.17);
+    padding: 15px 53px;
+    color: #fff;
+}
+
+.wel p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wel i {
+    cursor: pointer;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+.wel i:hover {
+    color: rgb(211, 208, 208);
+}
+
+.info-contact .contact-us p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.info-contact .contact-us p a {
+    color: #fff;
+    position: relative;
+}
+
+.info-contact .contact-us p a::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    width: 0%;
+    bottom: 0;
+    transition: all 0.5s cubic-bezier(.17, .67, .83, .67);
+}
+
+.info-contact .contact p a:hover:before {
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* navbar */
+
+.navbar {
+    padding: 15px 53px;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.navbar-nav {
+    padding-left: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.5s cubic-bezier(.17, .67, .83, .67);
+}
+
+.navbar .navbar-nav .nav-link.active::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 80%;
+    bottom: 9px;
+    left: 7px;
+    transition: all 0.5s cubic-bezier(.17, .67, .83, .67);
+}
+
+
+.navbar .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 0%;
+    bottom: 9px;
+    left: 7px;
+    transition: all 0.5s cubic-bezier(.17, .67, .83, .67);
+}
+
+.navbar .navbar-nav .nav-link:hover:before {
+    width: 80%;
+}
+
+/*main-title-banner  */
+
+.header .main-title {
+    position: relative;
+    top: 30px;
+}
+
+.header .main-title h1 {
+    color: #fff;
+    font-size: 100px;
+    line-height: 118px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header .main-title p {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+
+.header .main-title a {
+    background-color: #fff;
+    padding: 20px 40px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.header .main-title a:hover {
+    color: #fff;
+    background-color: rgba(124, 172, 225, 1);
+}
+
+/*team  */
+.our-team {
+    margin: 160px 0;
+}
+
+.our-team .title-team h5 {
+    color: rgba(124, 172, 225, 1);
+}
+
+.our-team .title-team h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+    font-weight: 400;
+}
+
+.our-team .img-details h6 {
+    padding-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.our-team .img-details p {
+    text-transform: capitalize;
+    color: #a19f9f;
+}
+
+.questions p {
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.questions i {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.questions .card {
+    border: none;
+    color: #858585;
+}
+
+hr {
+    color: #adadad;
+}
+
+/* section Questions */
+#questions {
+    margin-bottom: 200px;
+}
+
+#questions .main-question-title h6 {
+    color: rgba(124, 172, 225, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#questions .main-question-title h4 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+#questions .main-question-title p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* section video  */
+#video-banner {
+    background-image: url(../images/h1-img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: right 50% center;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0;
+}
+
+.video-text p {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.video-text span i {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.video-link {
+    color: #fff;
+}
+
+.video-link:hover {
+    color: #fff;
+}
+
+/* contact section */
+.contact {
+    margin: 150px 0;
+}
+
+.contact-text h3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.contact-text p {
+    font-size: 18px;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+input.form-control {
+    height: 50px;
+}
+
+.form-control {
+    border-radius: 0;
+    outline: 0;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #6a98ca;
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+
+.btn {
+    background: #7cace1;
+    border-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #8cafd4;
+    color: #fff;
+}
+
+.img-contact {
+    margin-left: 50px;
+}
+
+/* features */
+.features {
+    margin: 150px 0;
+}
+
+.features .feature .feature-icon i {
+    background-color: #e0dedeab;
+    color: #7cace1;
+    padding: 35px;
+    font-size: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.features .feature .feature-text h6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+/* slider */
+.slider {
+    background-image: url(../images/h1-img-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
